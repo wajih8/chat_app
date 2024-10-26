@@ -1,6 +1,6 @@
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import *
-from chatapp.functions.chat_client import check_login
+from chatapp.functions.api_requests import check_login
 import time
 
 
@@ -15,6 +15,7 @@ def verif(ch):
 
 
 def login_inter():
+
     global kls
     kls = "d"
 
@@ -26,9 +27,9 @@ def login_inter():
             QMessageBox.critical(ff, "error", "user length <5")
         else:
             x = check_login(user, passr)
+
             if x:
                 ff.lres.setText("login avec success")
-                time.sleep(1.1)
                 app.exit()
 
             else:
@@ -51,7 +52,7 @@ def login_inter():
     ff.bas.clicked.connect(login)
     ff.bc.clicked.connect(clss)
     app.exec_()
-    ff.close()
+    ff.hide()
     if kls == "s":
         return (5)
     else:
