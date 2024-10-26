@@ -82,11 +82,6 @@
     <property name="styleSheet">
      <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
-    <item>
-     <property name="text">
-      <string>80</string>
-     </property>
-    </item>
    </widget>
    <widget class="QPushButton" name="bsend">
     <property name="geometry">
@@ -137,9 +132,9 @@
    <widget class="QLineEdit" name="lserch">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>150</x>
       <y>10</y>
-      <width>601</width>
+      <width>471</width>
       <height>31</height>
      </rect>
     </property>
@@ -150,9 +145,9 @@
    <widget class="QPushButton" name="bserch">
     <property name="geometry">
      <rect>
-      <x>810</x>
+      <x>630</x>
       <y>10</y>
-      <width>111</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
@@ -195,6 +190,36 @@
      <string>Search :</string>
     </property>
    </widget>
+   <widget class="QLabel" name="lnoti">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>0</y>
+      <width>171</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 0, 4);</string>
+    </property>
+    <property name="text">
+     <string>friend request :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bgm">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>see request</string>
+    </property>
+   </widget>
    <zorder>frame_2</zorder>
    <zorder>frame</zorder>
    <zorder>scrollArea</zorder>
@@ -204,6 +229,8 @@
    <zorder>lserch</zorder>
    <zorder>bserch</zorder>
    <zorder>label</zorder>
+   <zorder>lnoti</zorder>
+   <zorder>bgm</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
